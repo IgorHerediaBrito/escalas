@@ -1,0 +1,41 @@
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Escalas</title>
+	<meta name="author" content="Igor Brito">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="./css/style.css"/>
+	<link rel="shortcut icon" href="./img/ic_term.png" type="image/x-png"/>
+</head>
+
+<body>
+	<div class="title"><b>Conversor de Escalas</b></div>
+	<form class="calculadora" onsubmit="calcular(); return false;">
+		<label>Converter de </label>
+		<select name="select" id="select-1" class="select-escala">
+			<option value="c" selected>Celsius (°C)</option>
+			<option value="f">Fahrenheit (°F)</option>
+			<option value="k">Kelvin (K)</option>
+			<option value="r">Rankini (°R)</option>		
+		</select>
+		<input type="text" id="valor-conversao"/>
+		<label>para </label>
+		<select name="select" id="select-2" class="select-escala">
+			<option value="c">Celsius (°C)</option>
+			<option value="f" selected>Fahrenheit (°F)</option>
+			<option value="k">Kelvin (K)</option>
+			<option value="r">Rankini (°R)</option>
+		</select>
+		<input type="submit" value="Converter" />
+	</form>
+	<div class="resultados">
+		<p id="resultado"></p>
+	</div>
+</body>
+
+<script src="app.js" charset="utf-8"></script>
+
+
+</html>
